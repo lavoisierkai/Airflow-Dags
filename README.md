@@ -26,13 +26,13 @@ Please merge to `main` if you need to push to the server
     
     A crontab task was added to detect if the ssh connection persists. 
 
-    `*  *  *  *  *  nc -z localhost 21050 || ssh -fNL 21050:10.90.20.2:21050 simon@10.1.10.240`
+    `*  *  *  *  *  nc -z localhost 21050 || ssh -fNL 21050:10.90.20.2:21050 Kai@10.1.10.240`
 
     This crontab task requires setup ssh-key before works.
 
     ```bash
     ssh-key-gen
-    ssk-copy-id simon@10.1.10.240
+    ssk-copy-id Kai@10.1.10.240
     ```
 
 - **Run Airflow Web server** 
